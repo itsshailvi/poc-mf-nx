@@ -1,0 +1,26 @@
+{
+    "name": "host-app",
+    "root": "apps/host-app",
+    "sourceRoot": "apps/host-app/src",
+    "projectType": "application",
+    "targets": {
+      "serve": {
+        "executor": "@nrwl/vite:dev-server",
+        "options": {
+          "command": "vite",
+          "configFile": "apps/host-app/vite.config.ts",
+          "buildTarget": "host-app:build",
+          "port": 5173
+        }
+      },
+      "build": {
+        "executor": "@nx/vite:build",
+        "outputs": ["{options.outputPath}"],
+        "options": {
+          "outputPath": "dist/apps/host-app",
+          "tsConfig": "apps/host-app/tsconfig.app.json"
+        }
+      }
+    }
+  }
+  

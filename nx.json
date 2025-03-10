@@ -1,0 +1,16 @@
+{
+  "extends": "nx/presets/npm.json",
+  "npmScope": "poc-mf-nx",
+  "projects": {
+    "host-app": {
+      "root": "apps/host-app",
+      "sourceRoot": "apps/host-app/src",
+      "targets": {}
+    },
+    "remote-app": {
+      "root": "apps/remote-app",
+      "sourceRoot": "apps/remote-app/src",
+      "targets": {}
+    }
+  }
+}
